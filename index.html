@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
     <title>Nomad Fit</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
         <button>Shop Now</button>
         <button>Explore Collection</button>
         <img id="heroImage" 
-        src="https://img.tineye.com/result/1597b7e9a1dd2ed02da6934c164b1c5906d8839fffa9f67b215c87c124be8656-1?size=160"
+        src="https://img.tineye.com/result/1597b7e9a1dd2ed02da6934c164b1c5906d8839fffa9f67b215c87c124be8656-1?size=1500"
         alt="hero image">
     </div>
 
@@ -36,7 +37,8 @@
     <h3>Featured Collections</h3>
 </div>
 <section>
-    <div class="inner">
+    <div class="collection grid">
+        <div class="collection card">
         <img
         src="https://media.istockphoto.com/id/1917023956/photo/happy-woman-with-a-yellow-hiking-backpack-enjoying-the-mountain-landscape.jpg?s=1024x1024&w=is&k=20&c=JAxfiH5HeV_zZ9-EWRUrRrtFMkSTTb9pGjeQR5o6VzE="
         alt="Adventure Wear"
@@ -44,15 +46,15 @@
         <p>Durable & weather-ready outfits</p>
     </div>
 
-    <div class="inner">
+     <div class="collection card">
     <img
     src="https://images.unsplash.com/photo-1542546257-ce68c29d8d19?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     alt="Urban Streetwear"
     <h3>Urban Streetwear</h3>
     <p>Sleek & modern city fashion</p>
-    </div>
+     </div>
 
-    <div class="inner">
+        <div class="collection card">
         <img
         src="https://media.istockphoto.com/id/1379314309/photo/directly-above-of-mans-hand-preparing-summer-luggage.jpg?s=1024x1024&w=is&k=20&c=-MMT1JZC2zC8abz7pUrLVPGKeSmjFW1yl_sXv37EJYg="
         alt="Travel Essentials"
@@ -60,7 +62,7 @@
         <p>Lightweight, packable styles</p>
     </div>
 
-    <div class="inner">
+        <div class="collection card">
         <img
         src="https://media.istockphoto.com/id/1421395362/photo/portrait-of-mature-grandfather-who-walking-at-winter-forest.jpg?s=1024x1024&w=is&k=20&c=oPqh9JoOIm4ha1OXDzydK18EmoJvBeVGznrA3RXz364="
         alt="Winter Nomad"
@@ -68,53 +70,71 @@
         <p>Layered, rugged fits for this cold</p>
     </div>
 
-    <div class="inner">
-        <img
+    <!--product grid (Shop Collection)-->
+    <section class="Shop">
+        <h2>Shop Collection</h2>
+    <div class="product-grid">
+        <div class="product-card">
+        <img 
         src="https://images.unsplash.com/photo-1688591844738-6f23c305cbe5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Adventure Trek Jacket"
         <h3>Adventure Trek Jacket</h3>
         <p>Waterproof, breathable jacket perfect for hiking and outdoor adventures</p>
+        <p>$199.99</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="inner">
+    <div class="product-card">
         <img
         src="https://media.istockphoto.com/id/2162417571/photo/casual-stylish-fashionable-hipster-traveler-woman-in-hat-and-with-brown-backpack-walking.jpg?s=1024x1024&w=is&k=20&c=omQrxa1DfYV_fUJiu9COmYXMr-arr7E0Zq5qAcOyeL8="
         alt="Urban Nomad Backpack"
         <h3>Urban Nomad Backpack</h3>
         <p>Sleek, weatherproof backpack with laptop compartment and hidden pockets</p>
+        <p>$149.99</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="inner">
+    <div class="product-card">
         <img
         src="https://media.istockphoto.com/id/1253101785/photo/urban-lifestyle-of-young-black-paulista.jpg?s=1024x1024&w=is&k=20&c=xK8pcpp_7Tydt1a_LnDeYXxVEXgeDPxEusgK8g7IZhE="
         alt="City Stretch Chinos"
         <h3>City Stretch Chinos</h3>
         <p>Four-way stretch chinos that move with you,perfect for urban exploration</p>
+        <p>$119.99</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="inner">
+    <div class="product-card">
         <img
         src="https://media.istockphoto.com/id/2161715194/photo/stylish-beige-mens-sweater-made-of-sheeps-wool-on-a-white-background-fashionable-knitted-warm.jpg?s=1024x1024&w=is&k=20&c=BsQEo4CX60p_qCk3sjdxb8R4P4e8za6rw0tDDTAHihM="
         alt="Merino Wool Henley"
         <h3>Merino Wool Henley</h3>
         <p>Naturally odor-resistant and temperature-regulating long sleeve henley</p>
+        <p>$89.99</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="inner">
+    <div class="product-card">
         <img
         src="https://images.unsplash.com/photo-1602366033898-6f99e395351a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Alpine Down Parka"
         <h3>Alpine Down Parka</h3>
         <p>Premium down-filled parka for extreme cold weather conditions</p>
+        <p>$299.99</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="inner">
+    <div class="product-card">
         <img
         src="https://media.istockphoto.com/id/1368350077/photo/winter-jacket-close-up-of-a-stylish-cosy-warm-silver-black-down-jacket-with-orange-lining-for.jpg?s=1024x1024&w=is&k=20&c=pTqmQ6vEklH4GbOLh7DW-PxAnJgJsXu5yxhBxBaxRnM="
         alt="Packable Rain Shell"
         <h3>Packable Rain Shell</h3>
         <p>Ultra-lightweight, packable rain jacket for unexpected weather</p>
+        <p>$129.99</p>
+        <button>Add to Cart</button>
 </section>
+
+   <!--footer-->
     <footer>
         <div class="top">
             <h1>Join the Nomad Community</h1>
@@ -125,9 +145,16 @@
         </div>
         <div class="footer-content">
             <div class="column">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
             <h4>Nomad Fits</h4>
             <p>Crafting adventure-ready fashion for the modern nimad. Every piece tells a story of wanderlust and style.</p> 
-            
+            </div>
+
+            <div class="social icons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </div>
             
             <div class="column">
                 <h4>Quick links</h4>
@@ -162,7 +189,15 @@
             <div class="bottom">
                <p>&copy; 2025 Nomad Fits. All rights reserved.</p> 
             </div>
-
+          <div class="footer nav">
+            <ul>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+            </ul>
+          </div>
             
     </footer>
-    <script src="script.js"></s
+    <script src="script.js"></script>
+</body>
+</html>
