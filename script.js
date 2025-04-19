@@ -8,18 +8,19 @@ const cartIcon = document.querySelector('.cart-icon');
 const cart = document.querySelector('.cart');
 const cartCloseBtn = document.querySelector('.cart-close-btn');
 const cartCount = document.querySelector('.cart-count');
-//fetch('https://fakestoreapi.com/products?limit=6')
-.then(response => response.json())
-.then(data => {
-//handle add to cart buttons
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const productId = button.dataset.productId;
-        addToCart(productId);
-    });
-});
-}.catch(error => console.error('Error fetching products:', error));
+fetch('https://fakestoreapi.com/products?limit=6')
+    .then(response => response.json())
+    .then(data => {
+        //handle add to cart buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productId = button.dataset.productId;
+                addToCart(productId);
+            });
+        });
+    })
+    .catch(error => console.error('Error fetching products:', error));
 //update cart count or local storage
 function updateCartCount() {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
@@ -50,7 +51,6 @@ filterButton.addEventListener('click', () => {
 });
 
 //add filtering logic
-const filterOptions = document.querySelectorAll('.filter-option');
 filterOptions.forEach(option => {
     option.addEventListener('click', () => {
         const selectedOption = option.dataset.filter;
