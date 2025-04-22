@@ -60,7 +60,7 @@ button.secondary {
 }
 
 .collection-card, .product-card {
-  background: rgb(18, 17, 17);
+  background: rgb(36, 55, 120);
   padding: 1rem;
   border-radius: 10px;
   width: 220px;
@@ -72,9 +72,7 @@ footer {
   padding: 2rem;
   text-align: column;
   display: flex;
-  align-items:right;
-  
-  
+  align-items:right; 
 
 }
  
