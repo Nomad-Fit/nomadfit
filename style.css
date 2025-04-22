@@ -10,6 +10,23 @@ body {
   background: #f5f5f5;
   color: #f9f5f5;
 }
+.svg class{
+  width: 24%;
+  height: 24%;
+}
+.small-img{
+  width: 200px;
+  height: auto;
+}
+.small-img:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,27 +40,35 @@ body {
   gap: 1.5rem;
 }
 .hero {
-  background: url('hero-bg.jpg') center/cover no-repeat;
-  color: rgb(12, 12, 12);
+  background: url("https://img.tineye.com/result/1597b7e9a1dd2ed02da6934c164b1c5906d8839fffa9f67b215c87c124be8656-1?size=1500") no-repeat  center center/cover; 
+  color: white;
   padding: 6rem 2rem;
   text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
-.inner {
-  width: 80%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.buttons {
+  margin: 10px;
+  display: block;
 }
 .hero-buttons button {
   padding: 10px 20px;
   margin: 1rem 0.5rem;
   border: none;
   font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: white;
+  
+
 }
 button.secondary {
   background: transparent;
-  color: white;
+  color: rgb(245, 243, 243);
   border: 2px solid white;
 }
 .collections, .shop {
@@ -60,21 +85,40 @@ button.secondary {
 }
 
 .collection-card, .product-card {
-  background: rgb(36, 55, 120);
+  background: rgb(18, 17, 17);
   padding: 1rem;
   border-radius: 10px;
   width: 220px;
   box-shadow: 0 2px 6px rgba(244, 244, 244, 0.1);
 }
 footer {
-  background: rgb(19, 19, 19);
+  background: rgb(46, 45, 65);
   color: white;
   padding: 2rem;
   text-align: column;
   display: flex;
-  align-items:right; 
-
+  justify-content: center;
+  align-items: right;
+  
 }
+.footercontent .svg {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+footer .social-icons svg{
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
  
 
 
