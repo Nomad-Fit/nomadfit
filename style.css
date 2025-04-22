@@ -97,15 +97,31 @@ footer {
   padding: 2rem;
   text-align: column;
   display: flex;
-  align-items:right;
+  justify-content: center;
+  align-items: right;
+  
+}
+.footercontent .svg {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+footer .social-icons svg{
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 }
 
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-.social-media-icon {
-  width:24px;
-  height:24px;
-}
+
+
+
 
