@@ -1,4 +1,4 @@
-css1
+
 *{
     margin: 0;
     padding: 0;
@@ -111,6 +111,7 @@ footer .social-icons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  
 }
 footer .social-icons svg{
   width: 24px;
@@ -118,7 +119,7 @@ footer .social-icons svg{
   fill: white;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
 
- 
 
 
