@@ -14,7 +14,7 @@ fetch('https://fakestoreapi.com/products?limit=6')
         //handle add to cart buttons
         const addToCartButtons = document.querySelectorAll('.add-to-cart');
         addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
+            button.addEventListener('click', () => {9
                 const productId = button.dataset.productId;
                 addToCart(productId);
             });
